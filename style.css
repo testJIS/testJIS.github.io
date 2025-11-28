@@ -46,7 +46,7 @@ a { text-decoration: none; color: inherit; transition: var(--transition); }
 /* Groupe CTA : Bouton + Texte en dessous */
 .cta-group {
     display: flex;
-    flex-direction: column; /* Empile verticalement */
+    flex-direction: column;
     align-items: center;
     gap: 15px;
     margin-top: 30px;
@@ -77,7 +77,6 @@ section { padding: 80px 0; }
     -ms-overflow-style: none; scrollbar-width: none; padding: 10px;
 }
 .carousel-track::-webkit-scrollbar { display: none; }
-/* Si le contenu dépasse, on aligne à gauche pour permettre le scroll */
 .carousel-view.has-scroll .carousel-track { justify-content: flex-start; }
 
 /* Style des Logos (Couleur -> Gris) */
@@ -90,17 +89,28 @@ section { padding: 80px 0; }
     max-width: 100%; max-height: 100%; object-fit: contain;
     filter: grayscale(0%); opacity: 1; transition: 0.3s ease; /* Couleur par défaut */
 }
-.carousel-logo img:hover { filter: grayscale(100%); opacity: 0.7; transform: scale(0.95); /* Gris au survol */ }
+/* Survol logos : devient gris uniquement si on a une souris */
+@media (hover: hover) {
+    .carousel-logo img:hover { filter: grayscale(100%); opacity: 0.7; transform: scale(0.95); }
+}
 
-/* Flèches (Cachées par défaut) */
+/* --- FLÈCHES (Correctif Mobile) --- */
 .carousel-nav {
     position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px;
     background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;
     cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 10; transition: 0.3s;
     opacity: 0; pointer-events: none;
+    color: var(--primary-color); /* Couleur flèche par défaut */
 }
 .carousel-view.has-scroll .carousel-nav { opacity: 1; pointer-events: all; }
-.carousel-nav:hover { background: var(--accent-color); color: white; }
+
+/* SOLUTION MOBILE : Le fond rouge ne s'applique QUE si l'appareil a une souris (hover) */
+@media (hover: hover) {
+    .carousel-nav:hover { background: var(--accent-color); color: white; }
+}
+/* Petit effet visuel au clic sur mobile (optionnel) */
+.carousel-nav:active { background-color: #eee; }
+
 .nav-left { left: 5px; } .nav-right { right: 5px; }
 
 
@@ -110,12 +120,14 @@ section { padding: 80px 0; }
 .card { 
     background: var(--white); padding: 30px; border-radius: 15px; 
     box-shadow: var(--shadow); text-align: center; 
-    border-top: 4px solid transparent; /* Bordure invisible par défaut */
+    /* BORDURE HAUTE INVISIBLE PAR DÉFAUT */
+    border-top: 4px solid transparent; 
     transition: var(--transition); 
 }
 .card:hover { 
     transform: translateY(-5px); 
-    border-top-color: var(--accent-color); /* Devient rouge au survol */
+    /* BORDURE HAUTE ROUGE AU SURVOL */
+    border-top-color: var(--accent-color); 
 }
 .card-icon { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px; }
 .card h3 { margin-bottom: 15px; font-size: 1.4rem; color: var(--primary-color); }
@@ -164,16 +176,16 @@ section { padding: 80px 0; }
 /* --- FOOTER & FORM --- */
 footer { background: var(--primary-color); color: white; padding: 80px 0 20px; }
 .footer-cta { 
-    text-align: center; /* Centre le titre */
+    text-align: center; /* Centre le texte au-dessus du form */
     margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.1); 
 }
 .footer-cta h2 { font-size: 2.5rem; margin-bottom: 10px; }
 
 .download-form { 
-    max-width: 600px; margin: 30px auto 0; /* Centré dans la page */
+    max-width: 600px; margin: 30px auto 0; 
     background: rgba(255,255,255,0.1); padding: 30px; 
     border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);
-    text-align: left; /* Contenu formulaire aligné à gauche */
+    text-align: left; 
 }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;}
 .download-form input, .download-form select { 
