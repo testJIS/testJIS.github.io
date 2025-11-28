@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior INSA Services | Expertise Ingénieur & Solutions Digitales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">LOGO INSA SERVICES</div>
+            <ul class="nav-links">
+                <li><a href="#expertises">Expertises</a></li>
+                <li><a href="#realisations">Nos Réalisations</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#contact" class="btn-nav">Estimez votre étude</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>L'Excellence <span class="highlight">INSA</span> au service de votre innovation</h1>
+            <p class="hero-subtitle">Transformez vos idées en réalité avec une Junior-Entreprise dynamique, technique et professionnelle.</p>
+            
+            <div class="cta-group">
+                <a href="#contact" class="btn-primary">Estimez votre étude <i class="fas fa-arrow-right"></i></a>
+                <span class="sub-cta">Réponse sous 48h • Devis gratuit</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="trust-bar">
+        <div class="container">
+            <p class="trust-text">Ils nous font confiance :</p>
+            <div id="company-carousel" class="carousel-view">
+                <div class="carousel-track" id="company-track"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertises" class="services">
+        <div class="container">
+            <h2 class="section-title">Pourquoi nous choisir ?</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <i class="fas fa-code card-icon"></i>
+                    <h3>Développement Web & App</h3>
+                    <p>Sites vitrines, applications métiers, solutions SaaS. Technologies modernes (React, Node, Python).</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-microchip card-icon"></i>
+                    <h3>Électronique & Embarqué</h3>
+                    <p>Conception de circuits, IoT, programmation bas niveau et prototypage rapide.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chart-line card-icon"></i>
+                    <h3>Audit & Conseil</h3>
+                    <p>Analyse de données, étude de marché et accompagnement stratégique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="realisations" class="realisations-section">
+        <div class="container">
+            <h2 class="section-title">Nos Dernières Réalisations</h2>
+            <p class="section-subtitle">Sélectionnez un projet pour voir les détails.</p>
+            
+            <div class="realisations-container">
+                <div class="projects-list" id="projects-list"></div>
+
+                <div class="project-preview" id="project-preview">
+                    <div class="preview-image-box">
+                        <img src="" alt="Aperçu projet" id="preview-img">
+                    </div>
+                    <div class="preview-content">
+                        <h3 id="preview-title">Titre du projet</h3>
+                        <div class="preview-tags" id="preview-tags"></div>
+                        <p id="preview-desc">Description détaillée...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Combien coûte une étude ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Le prix est calculé en Jour-Étude (JEH) selon la complexité et la durée.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Quels sont les délais ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Les délais sont fixés dès la signature de la convention.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>Qui réalise les missions ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Les étudiants de l'INSA, encadrés par nos chefs de projet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temoignages" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce qu'ils disent de nous</h2>
+            <div id="testimonials-carousel" class="carousel-view">
+                <div class="carousel-track" id="testimonials-track"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-title">Nos Partenaires</h2>
+            <div id="partners-carousel" class="carousel-view">
+                <div class="carousel-track" id="partners-track"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-cta download-section">
+                <h2>Discutons de votre projet</h2>
+                <p>Remplissez ce formulaire pour recevoir notre plaquette et être recontacté.</p>
+                
+                <form id="plaquetteForm" class="download-form">
+                    <div class="form-grid">
+                        <input type="text" id="userName" placeholder="Votre Nom *" required>
+                        <input type="email" id="userEmail" placeholder="Email Professionnel *" required>
+                        <input type="tel" id="userPhone" placeholder="Téléphone">
+                        <select id="userService" required>
+                            <option value="" disabled selected>Type de prestation *</option>
+                            <option value="web">Développement Web / App</option>
+                            <option value="elec">Électronique / Embarqué</option>
+                            <option value="audit">Audit & Conseil</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large"><i class="fas fa-paper-plane"></i> Envoyer</button>
+                </form>
+                <p id="formMessage" style="display:none; margin-top:15px; color: #a5ffa5; font-weight: bold;"></p>
+            </div>
+
+            <div class="footer-links">
+                <div class="col">
+                    <h4>Junior INSA Services</h4>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Junior+INSA+Services+Toulouse" target="_blank" class="contact-link"><i class="fas fa-map-marker-alt"></i> 135 Avenue de Rangueil<br>Toulouse, France</a>
+                    <a href="mailto:contact@juniorinsaservices.fr" class="contact-link"><i class="fas fa-envelope"></i> contact@juniorinsaservices.fr</a>
+                    <a href="tel:+33562170500" class="contact-link"><i class="fas fa-phone"></i> 05 62 17 05 00</a>
+                </div>
+                <div class="col">
+                    <h4>Légal</h4>
+                    <a href="mentions-legales.html">Mentions Légales</a>
+                    <a href="politique-confidentialite.html">Politique de Confidentialité</a>
+                </div>
+                <div class="col">
+                    <h4>Réseaux</h4>
+                    <a href="https://www.linkedin.com/company/junior-insa-services/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.instagram.com/juniorinsaservices/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2024 Junior INSA Services. Tous droits réservés. • <a href="plaquette.pdf" target="_blank" class="direct-pdf-link">Télécharger la plaquette PDF</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "quote": "Une équipe réactive et compétente. Le livrable correspondait parfaitement à nos attentes techniques.",
+        "author": "Jean Dupont",
+        "role": "CTO, Start-up Tech"
+    },
+    {
+        "quote": "Junior INSA Services nous a accompagnés sur une étude de marché complexe avec un grand professionnalisme.",
+        "author": "Marie Curie",
+        "role": "Directrice Innovation"
+    },
+    {
+        "quote": "Le prototype électronique réalisé fonctionne à merveille et a permis de débloquer des fonds.",
+        "author": "Nikola Tesla",
+        "role": "Fondateur, ElecFuture"
+    },
+    {
+        "quote": "Un audit SI très pertinent qui a mis en lumière des failles critiques.",
+        "author": "Grace Hopper",
+        "role": "DSI"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Application Mobile IoT",
+        "description": "Développement d'une application React Native connectée à des capteurs Bluetooth pour le suivi sportif.",
+        "tags": ["React Native", "Bluetooth", "Mobile"],
+        "image": "projet_app.jpg"
+    },
+    {
+        "title": "Refonte Site E-commerce",
+        "description": "Migration d'un site Prestashop vers une solution sur-mesure Symfony pour optimiser les performances.",
+        "tags": ["Symfony", "Web", "Performance"],
+        "image": "projet_web.jpg"
+    },
+    {
+        "title": "Banc de Test Électronique",
+        "description": "Conception d'une carte électronique PCB pour tester la résistance de composants aéronautiques.",
+        "tags": ["PCB", "Électronique", "Altium"],
+        "image": "projet_elec.jpg"
+    },
+    {
+        "title": "Étude de Marché IA",
+        "description": "Analyse de la concurrence et étude de faisabilité pour une start-up dans l'intelligence artificielle.",
+        "tags": ["Conseil", "Marketing", "Data"],
+        "image": "projet_conseil.jpg"
+    }
+]
